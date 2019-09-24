@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <style type="text/css">
+        .textfields div {display: inline;}
+        .vcenter {
+            <!-- display: inline-block;-->
+            float: none;
+            vertical-align: middle;}
+    </style>
+</head>
+<body>
+
+
+<div class="container text-center">
+
+    <p><br></p>
+
+    <!--    <div class="page-header"><h5>Url to get images</h5></div>-->
+    <div class="row justify-content-center">
+
+        <ul>
+            <ol>Enter url to page of "https://detail.1688.com" site to get images.
+                <form method="post" action="">{% csrf_token %}
+                    <div class="textfields col-12 text-center">
+                        <div>{{form.url.errors}} <!-- {{form.url.label_tag}}--> {{form.url}}</div>
+                        <br>
+                        <input type="submit" value="Send" class="btn btn-primary"/>
+                    </div>
+                </form>
+            </ol>
+            <br>
+            <ol><p>Then stand by about 30 seconds until downloading images, and press link below.</p></ol>
+            <br>
+            <ol><p><a href="{% static 'images.zip' %}">Download ZIP</a></p></ol>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
