@@ -7,7 +7,7 @@
 
     You can download the ZIP with script... 
 
-    But better clone it for ability to get my updates. Also it should for install it on a server.
+    But better clone it for ability to get my updates. It's also better for installation on a hosting server.
     
     #### To clone:
     
@@ -39,24 +39,26 @@
 For run on Windows you can use the files `.cmd`. 
 
 To run this script on your PC (personal computer) in CMD print and run `python manage.py runserver` in the script's folder.
-(Or run start_local_server.cmd)
+(Or run `start_local_server.cmd`)
 
-It run local server, then in browser you can open interface on url `http://127.0.0.1:8000`.
+It will run a local server, now in a browser you can open interface on url http://127.0.0.1:8000.
 
 ## Run a server and deploy
+The script use "Django" - Python's framework to creating sites. 
+
 On differ web hostings can be differ way to run server.
 To better see help for this hosting on its site or in internet. https://www.google.com/search?q=django%20deploy
 
 Also, need to switch value of variable `DEBUG = True` to `False`. 
 It located in path `detail/detail/setting.py`. Edit it by text editor.
 
-Follows some links to Help about *How to deploy Django* (framework of this script) on biggest half-free hostings:
+The following are a some links to Help about *How to deploy Django* on the largest half-free hosting services:
 
-_pythonanywhere_ (on Free plan no ability to scrapy other sites, paid plans begins $5/mo)
+_pythonanywhere_ (on Free plan have not ability to scrape other sites, paid plans begins $5/mo)
 * https://tutorial.djangogirls.org/en/deploy/
 * https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/
 
 _heroku_ (can be difficult)
 * https://devcenter.heroku.com/articles/deploying-python
 
-Also, there are: AWS (Amazon, 1st year is free) and Google Clouds (same). Digitalocean, etc.
+Also there are: AWS (Amazon, 1st year is free), Google Clouds (same). Digitalocean, etc.
